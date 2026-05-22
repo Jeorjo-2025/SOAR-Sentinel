@@ -1,40 +1,29 @@
-export default function ContactForm() {
-  return (
-    <div className="card contact-card">
-      <h2>Ask Me About This SOAR Project</h2>
-      <p>Recruiters and peers can leave questions or feedback here.</p>
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-      <form
-        name="soar-contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="soar-contact" />
+  <div hidden>
+    <input name="bot-field" />
+  </div>
 
-        <p className="hidden">
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
-        </p>
+  <label>
+    Your Name:
+    <input type="text" name="name" required />
+  </label>
 
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
+  <label>
+    Your Email:
+    <input type="email" name="email" required />
+  </label>
 
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
+  <label>
+    Message:
+    <textarea name="message" required></textarea>
+  </label>
 
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  );
-}
+  <button type="submit">Send Message</button>
+</form>;
