@@ -1,0 +1,3 @@
+model:
+  contamination: 0.05
+  random_state: 42

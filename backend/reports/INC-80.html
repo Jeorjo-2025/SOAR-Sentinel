@@ -1,0 +1,38 @@
+
+<html>
+<head><title>Incident Report - INC-80</title></head>
+<body>
+<h1>Incident Report - INC-80</h1>
+<p><b>Generated:</b> 2026-05-22T18:01:11.779170</p>
+<h2>Executive Summary</h2>
+<p>Risk level: <b>high</b></p>
+<p>Event type: <b>suspicious_powershell</b></p>
+<p>User: <b>user18</b> | Source IP: <b>10.0.0.30</b> | Dest IP: <b>10.0.0.24</b></p>
+
+<h2>Timeline</h2>
+<p>Timestamp: 2026-05-16 02:12:23.712104</p>
+
+<h2>Threat Intelligence</h2>
+<ul>
+  <li>IP malicious score: 79</li>
+  <li>IP threat category: ransomware</li>
+  <li>Hash malicious score: 93</li>
+  <li>Hash threat category: bruteforce</li>
+</ul>
+
+<h2>UEBA Analysis</h2>
+<ul>
+  <li>Anomaly score: 0.018</li>
+  <li>Normalized anomaly: 0.54</li>
+</ul>
+
+<h2>Actions Taken</h2>
+<ul>
+  <li>Playbook: malicious_ip</li>
+  <li>Details: {'blocked_ip': '10.0.0.30', 'host_isolated': nan}</li>
+</ul>
+
+<h2>Recommendations</h2>
+<p>Review user activity, validate IP reputation with external TI sources, and update detection rules if needed.</p>
+</body>
+</html>

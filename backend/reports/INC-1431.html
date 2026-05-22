@@ -1,0 +1,38 @@
+
+<html>
+<head><title>Incident Report - INC-1431</title></head>
+<body>
+<h1>Incident Report - INC-1431</h1>
+<p><b>Generated:</b> 2026-05-22T18:01:11.787171</p>
+<h2>Executive Summary</h2>
+<p>Risk level: <b>critical</b></p>
+<p>Event type: <b>malware_detected</b></p>
+<p>User: <b>user11</b> | Source IP: <b>10.0.0.40</b> | Dest IP: <b>10.0.0.15</b></p>
+
+<h2>Timeline</h2>
+<p>Timestamp: 2026-05-22 08:54:46.712104</p>
+
+<h2>Threat Intelligence</h2>
+<ul>
+  <li>IP malicious score: 41</li>
+  <li>IP threat category: unknown</li>
+  <li>Hash malicious score: 98</li>
+  <li>Hash threat category: botnet</li>
+</ul>
+
+<h2>UEBA Analysis</h2>
+<ul>
+  <li>Anomaly score: 0.033</li>
+  <li>Normalized anomaly: 1.0</li>
+</ul>
+
+<h2>Actions Taken</h2>
+<ul>
+  <li>Playbook: malware_hash</li>
+  <li>Details: {'blocked_ip': nan, 'host_isolated': '10.0.0.15'}</li>
+</ul>
+
+<h2>Recommendations</h2>
+<p>Review user activity, validate IP reputation with external TI sources, and update detection rules if needed.</p>
+</body>
+</html>
